@@ -1,0 +1,91 @@
+<ion-header>
+  <ion-toolbar color="btnColor">
+    <ion-title>
+      <img src="assets/images/left_arrow.png">
+      <h4>Create dare or aware</h4>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="full-screen">
+    <ion-item lines="none" class="ion-item">
+      <img class="profile-img" src="assets/images/bg_user.png">
+      <ion-row class="profile">
+        <ion-col>
+          <ion-label>Name</ion-label>
+          <select>
+            <option value="Dare">Dare</option>
+            <option value="Aware">Aware</option>
+          </select>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <select>
+            <option>Public</option>
+            <option value="NEWTON">Friends</option>
+            <option value="NEEDHAM">Only Me</option>
+            <option value="WELLESLEY">Custom</option>
+            <option value="BOSTON">Close Friends</option>
+          </select>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+
+    <ion-textarea rows="12" placeholder="Write Something...."></ion-textarea>
+
+    <ion-item lines="none" class="icon-item">
+      <ion-list>
+        <img src="assets/images/Photo.png">
+      </ion-list>
+      <ion-list>
+        <span>Photo</span>
+      </ion-list>
+    </ion-item>
+
+    <ion-item lines="none" class="icon-item">
+      <ion-list>
+        <img src="assets/images/Video.png">
+      </ion-list>
+      <ion-list>
+        <span>Video</span>
+      </ion-list>
+    </ion-item>
+
+    <ion-item lines="none" class="icon-item">
+      <ion-list>
+        <img src="assets/images/Tag-Friends.png">
+      </ion-list>
+      <ion-list>
+        <span>Tag Friends</span>
+      </ion-list>
+    </ion-item>
+
+    <ion-item lines="none" class="icon-item">
+      <ion-list>
+        <img src="assets/images/Location.png">
+      </ion-list>
+      <ion-list>
+        <span>Location</span>
+      </ion-list>
+    </ion-item>
+
+    <ion-item lines="none" class="icon-item">
+      <ion-list>
+        <img src="assets/images/Feeling.png">
+      </ion-list>
+      <ion-list>
+        <span>Feeling</span>
+      </ion-list>
+    </ion-item>
+
+    <ion-row text-center class="form-horizontal" padding-bottom>
+      <ion-col>
+        <ion-button color="btnColor" class="btn post" type="submit">
+          Post
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

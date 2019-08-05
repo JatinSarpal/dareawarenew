@@ -1,0 +1,15 @@
+ion-header {
+  margin: 1% auto 0;
+  background-color: #7b98d6 !important;
+
+  .img {
+    float: left;
+    margin-top: 15px;
+  }
+  ion-searchbar {
+    display: inline-block;
+    text-align: left;
+    color: #555;
+    width: 88%;
+  }
+}

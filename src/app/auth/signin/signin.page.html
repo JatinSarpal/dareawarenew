@@ -1,0 +1,72 @@
+<ion-header padding>
+  <ion-toolbar>
+    <ion-title>
+      <img src="/assets/images/0001.png">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="full-screen">
+    <form (ngSubmit)="signUp()">
+      <ion-row>
+        <ion-col>
+          <select class="language" name="center_name">
+            <option>English</option>
+            <option value="NEWTON">Hindi</option>
+            <option value="NEEDHAM">Punjabi</option>
+            <option value="WELLESLEY">Arbic</option>
+            <option value="BOSTON">Tamil</option>
+          </select>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-input name="username_email" placeholder="Phone number, username or email" id="main"
+            [(ngModel)]="signInModel.username"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-input name="password" placeholder="Password" id="main" type="password"
+            [(ngModel)]="signInModel.password"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row text-center class="form-horizontal" padding-bottom>
+        <ion-col>
+          <ion-button color="btnColor" class="btn" type="submit">
+            Log in
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row text-center>
+        <ion-col>
+          <ion-label>OR</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row class="fb-login">
+        <ion-col>
+          <ion-label> 
+            <img class="fb" src="/assets/images/fb.png"> Log in with Facebook</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row padding>
+        <ion-col class="signin">
+          <ion-text class="signup">Don't have an account?<a class="login" href="/signup">Sign up</a>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-row text-center>
+        <ion-col>
+          <ion-label>Get the app.</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row text-center>
+        <ion-col class="img-col">
+          <img src="/assets/images/01.png">
+          <img src="/assets/images/02.png">
+        </ion-col>
+      </ion-row>
+    </form>
+  </div>
+</ion-content>

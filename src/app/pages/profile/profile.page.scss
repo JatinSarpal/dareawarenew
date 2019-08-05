@@ -1,0 +1,64 @@
+ion-header {
+  margin: 1% auto 0;
+  background-color: #7b98d6 !important;
+
+  img {
+    float: left;
+    margin-top: 15px;
+  }
+  h4 {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+}
+
+.img-column {
+  .profile {
+    width: 33%;
+    height: 90%;
+  }
+
+  span {
+    position: absolute;
+    bottom: 27%;
+    left: 42%;
+    background: #e5e5e5;
+    padding: 3px 9px 3px 9px;
+
+    b {
+      font-size: 14px;
+      margin-left: 5px;
+    }
+  }
+}
+
+.info {
+    cursor: pointer;
+
+    p {
+        margin: 4px 0px;
+        font-size: 12px;
+    }
+}
+
+.link-row {
+    border: 1px solid #f3f3f3;
+    text-align: center;
+    background: #fafafa;
+    border-left: none;
+    border-right: none;
+    
+    a {
+        color: #337ab7;
+        font-size: 12px;
+    }
+
+    a.dare {
+        padding: 0 30px;
+        border-left: 1px solid gainsboro;
+        border-right: 1px solid gainsboro;
+    }
+    
+}

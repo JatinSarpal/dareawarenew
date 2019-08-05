@@ -1,0 +1,44 @@
+.facebook {
+  padding-right: 7px;
+  padding-bottom: 2px;
+}
+
+.forgot {
+  margin-left: 30%;
+  color: #999999;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.signin {
+  background: #fafafa;
+  color: #999999;
+  border: 2px solid #f3f3f3;
+  border-left: none;
+  border-right: none;
+  padding: 13px;
+  text-align: center;
+  height: 50px;
+}
+
+.signup {
+  color: #999999;
+  font-size: 12px;
+}
+
+.login {
+  margin-left: 10px;
+  color: #999999;
+}
+
+.fb-login {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+
+  ion-label {
+    cursor: pointer;
+    font-size: 14px;
+  }
+}

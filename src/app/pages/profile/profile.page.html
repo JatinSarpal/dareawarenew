@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar color="btnColor">
+    <ion-title>
+      <img src="assets/images/left_arrow.png">
+      <h4>Name</h4>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="full-screen">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="img-column" text-center>
+          <img class="profile" src="assets/images/profile.png">
+          <span>
+            <img src="assets/images/camera.png">
+            <b>Edit</b>
+          </span>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col text-center>
+          <ion-label>Name</ion-label>
+        </ion-col>
+      </ion-row>
+
+      <ion-row margin text-center class="info">
+        <ion-col size="3">
+          <b>600</b>
+          <P>Dare</P>
+        </ion-col>
+        <ion-col size="3">
+          <b>800</b>
+          <p>Aware</p>
+        </ion-col>
+        <ion-col size="3">
+          <b>900</b>
+          <p>Followers</p>
+        </ion-col>
+        <ion-col size="3">
+          <b>600</b>
+          <p>Followers</p>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="link-row">
+        <ion-col>
+          <p><a href="#">Photos</a></p>
+        </ion-col>
+        <ion-col>
+          <p><a class="dare" href="#">Dare</a></p>
+        </ion-col>
+        <ion-col>
+          <p><a href="#">Aware</a></p>
+        </ion-col>
+      </ion-row>
+
+      <div *ngFor="let feed of feedImage">
+        <app-feeds [feed]="feed"></app-feeds>
+      </div>
+
+    </ion-grid>
+  </div>
+</ion-content>

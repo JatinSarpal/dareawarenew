@@ -1,0 +1,145 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import "~@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+@import "./theme/mixins.scss";
+
+#main {
+  border: none;
+  background: #fafafa;
+  box-shadow: none;
+  font-size: 12px;
+  width: 90%;
+  margin: 0 auto;
+  color: #555;
+}
+
+.full-screen {
+  width: 35%;
+  margin: auto;
+
+  @include xs-small-phone {
+    width: 100%;
+  }
+  @include small-phone {
+    width: 100%;
+  }
+  @include phone {
+    width: 75%;
+  }
+  @include tablet {
+    width: 45%;
+  }
+}
+
+ion-header {
+  width: 35%;
+  margin: auto;
+
+  @include xs-small-phone {
+    width: 100%;
+    margin: auto;
+  }
+  @include small-phone {
+    width: 100%;
+    margin: auto;
+  }
+  @include phone {
+    width: 75%;
+    margin: auto;
+  }
+  @include tablet {
+    width: 45%;
+    margin: auto;
+  }
+}
+
+ion-footer {
+  width: 35%;
+  margin: auto;
+
+  @include xs-small-phone {
+    width: 100%;
+    margin: auto;
+  }
+  @include small-phone {
+    width: 100%;
+    margin: auto;
+  }
+  @include phone {
+    width: 75%;
+    margin: auto;
+  }
+  @include tablet {
+    width: 45%;
+    margin: auto;
+  }
+}
+
+.img-col {
+  img {
+    margin: 5px;
+    @include xs-small-phone {
+        max-width: 44% !important;
+      }
+  }
+}
+
+ion-header {
+  position: unset;
+  text-align: center;
+  padding-bottom: unset !important;
+}
+.header-ios ion-toolbar:last-child {
+  --border-width: 0 !important;
+}
+
+.language {
+  background: #fafafa;
+  padding: 0px 15px 0px 15px;
+  color: #999999;
+  font-size: 12px;
+  border: none;
+  float: right;
+}
+
+.btn {
+  width: 90%;
+  height: 30px;
+  font-size: 12px;
+  background: var(--ion-color-btnColor);
+  margin: 0 auto;
+  border-radius: 3px;
+  text-transform: none;
+}
+
+a {
+  text-decoration: none;
+  color: #999999;
+}
+
+a:hover {
+  text-decoration: underline;
+}

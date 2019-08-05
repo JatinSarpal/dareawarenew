@@ -1,0 +1,38 @@
+.img-column {
+  .profile {
+    width: 33%;
+    height: 90%;
+  }
+
+  span {
+    position: absolute;
+    bottom: 27%;
+    left: 42%;
+    background: #e5e5e5;
+    padding: 3px 9px 3px 9px;
+
+    b {
+      font-size: 14px;
+      margin-left: 5px;
+    }
+  }
+}
+
+ion-item {
+  ion-label {
+    font-weight: bold;
+    color: #385185;
+    margin-left: 20px;
+    font-size: 13px;
+  }
+  p {
+    border-bottom: 2px solid #f2f2f2;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+}
+
+span {
+  font-weight: bold;
+  color: #333;
+}

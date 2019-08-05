@@ -1,0 +1,79 @@
+<ion-header padding>
+  <ion-toolbar>
+    <ion-title>
+      <img src="/assets/images/0001.png">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="full-screen">
+    <form (ngSubmit)="signUp()">
+      <ion-row>
+        <ion-col>
+          <select class="language" name="center_name">
+            <option>English</option>
+            <option value="NEWTON">Hindi</option>
+            <option value="NEEDHAM">Punjabi</option>
+            <option value="WELLESLEY">Arbic</option>
+            <option value="BOSTON">Tamil</option>
+          </select>
+        </ion-col>
+      </ion-row>
+      <ion-row text-center class="form-horizontal" padding-bottom>
+        <ion-col>
+          <ion-button color="btnColor" class="btn">
+            <img class="facebook" src="/assets/images/facebook.png">
+            Log in wth facebook
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-input name="email_number" placeholder="Mobile Number / Email" id="main"
+            [(ngModel)]="signUpModel.email_number"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-input name="username" placeholder="Username" id="main" [(ngModel)]="signUpModel.username"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-input name="password" placeholder="Password" id="main" type="password"
+            [(ngModel)]="signUpModel.password"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row text-center class="form-horizontal" padding-bottom>
+        <ion-col>
+          <ion-button color="btnColor" class="btn" type="submit">
+            Sign Up
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <a class="forgot" routerLink="/forgot-password">Forgot Password?</a>
+        </ion-col>
+      </ion-row>
+      <ion-row padding>
+        <ion-col class="signin">
+          <ion-text class="signup">already your account sign in<a class="login" href="/signin">Log in</a>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-row text-center>
+        <ion-col>
+          <ion-label>Get the app.</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row text-center>
+        <ion-col class="img-col">
+          <img src="/assets/images/01.png">
+          <img src="/assets/images/02.png">
+        </ion-col>
+      </ion-row>
+    </form>
+  </div>
+</ion-content>
