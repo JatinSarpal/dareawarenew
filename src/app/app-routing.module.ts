@@ -3,7 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', redirectTo: 'signin', pathMatch: 'full' },
-  // { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
+  { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
   { path: 'signup', loadChildren: './auth/signup/signup.module#SignupPageModule' },
   { path: 'signin', loadChildren: './auth/signin/signin.module#SigninPageModule' },
   { path: 'forgot-password', loadChildren: './auth/forgot-password/forgot-password.module#ForgotPasswordPageModule' },
@@ -12,7 +12,9 @@ const routes: Routes = [
   { path: 'search', loadChildren: './pages/search/search.module#SearchPageModule' },
   { path: 'notification', loadChildren: './pages/notification/notification.module#NotificationPageModule' },
   { path: 'profile', loadChildren: './pages/profile/profile.module#ProfilePageModule' },
-  { path: 'edit-profile', loadChildren: './pages/edit-profile/edit-profile.module#EditProfilePageModule' }
+  { path: 'edit-profile', loadChildren: './pages/edit-profile/edit-profile.module#EditProfilePageModule' },
+  { path: 'dare', loadChildren: './pages/dare/dare.module#DarePageModule' }
+
 
 
 ];

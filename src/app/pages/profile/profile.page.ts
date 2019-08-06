@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ProfilePage implements OnInit {
 
   // For testing
-  feedImage: any = ['photo1', 'photo3'];
+  feedImage: any = ['photo1.jpg', 'photo3.jpg'];
 
   constructor() { }
 

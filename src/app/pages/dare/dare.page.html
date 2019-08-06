@@ -1,0 +1,65 @@
+<app-search-header [iconUser]="'user'" [iconDare]="'white_camera'"></app-search-header>
+
+<ion-content>
+  <div class="full-screen">
+    <ion-grid>
+      <ion-row margin text-center class="info">
+        <ion-col class="col-edit"><a href="#">
+            <img src="assets/images/bg_user.png"></a>
+          <p class="edit">+ Edit</p>
+          <b>GURPAL</b>
+        </ion-col>
+        <ion-col>
+          <b>600</b>
+          <P>Dare</P>
+        </ion-col>
+        <ion-col>
+          <b>800</b>
+          <p>Aware</p>
+        </ion-col>
+        <ion-col>
+          <b>900</b>
+          <p>Followers</p>
+        </ion-col>
+        <ion-col>
+          <b>600</b>
+          <p>Followers</p>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="link-row">
+        <ion-col>
+          <p><a href="#">Photos</a></p>
+        </ion-col>
+        <ion-col>
+          <p><a class="dare" href="#">Dare</a></p>
+        </ion-col>
+        <ion-col>
+          <p><a href="#">Aware</a></p>
+        </ion-col>
+      </ion-row>
+
+      <div *ngFor="let feed of feedImage">
+        <app-feeds [feed]="feed"></app-feeds>
+      </div>
+
+    </ion-grid>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-row text-center>
+    <ion-col>
+      <a href="#"><img src="assets/images/home.png"></a>
+    </ion-col>
+    <ion-col>
+      <a href="#"><img src="assets/images/dare.png"></a>
+    </ion-col>
+    <ion-col>
+      <a href="#"><img src="assets/images/aware.png"></a>
+    </ion-col>
+    <ion-col>
+      <a href="#"><img src="assets/images/user2.png"></a>
+    </ion-col>
+  </ion-row>
+</ion-footer>

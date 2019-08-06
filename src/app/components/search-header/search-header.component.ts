@@ -9,6 +9,7 @@ export class SearchHeaderComponent implements OnInit {
 
   @Input() iconImg = '';
   @Input() iconUser = '';
+  @Input() iconDare = '';
 
   constructor() { }
 
