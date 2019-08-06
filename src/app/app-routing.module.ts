@@ -13,7 +13,8 @@ const routes: Routes = [
   { path: 'notification', loadChildren: './pages/notification/notification.module#NotificationPageModule' },
   { path: 'profile', loadChildren: './pages/profile/profile.module#ProfilePageModule' },
   { path: 'edit-profile', loadChildren: './pages/edit-profile/edit-profile.module#EditProfilePageModule' },
-  { path: 'dare', loadChildren: './pages/dare/dare.module#DarePageModule' }
+  { path: 'dare', loadChildren: './pages/dare/dare.module#DarePageModule' },  { path: 'aware', loadChildren: './pages/aware/aware.module#AwarePageModule' }
+
 
 
 
