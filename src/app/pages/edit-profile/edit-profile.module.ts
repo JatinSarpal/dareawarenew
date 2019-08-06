@@ -6,7 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { EditProfilePage } from './edit-profile.page';
-import { SearchHeaderComponent } from 'src/app/components/search-header/search-header.component';
+import { SharedModule } from 'src/app/components/shared.module';
 
 const routes: Routes = [
   {
@@ -17,11 +17,12 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
+    SharedModule,
     CommonModule,
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [EditProfilePage, SearchHeaderComponent]
+  declarations: [EditProfilePage]
 })
 export class EditProfilePageModule {}

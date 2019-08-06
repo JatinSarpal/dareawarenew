@@ -5,11 +5,11 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
-import { SearchHeaderComponent } from '../components/search-header/search-header.component';
-import { FeedsComponent } from '../components/feeds/feeds.component';
+import { SharedModule } from '../components/shared.module';
 
 @NgModule({
   imports: [
+    SharedModule,
     CommonModule,
     FormsModule,
     IonicModule,
@@ -20,6 +20,6 @@ import { FeedsComponent } from '../components/feeds/feeds.component';
       }
     ])
   ],
-  declarations: [HomePage, SearchHeaderComponent, FeedsComponent]
+  declarations: [HomePage]
 })
 export class HomePageModule {}

@@ -6,8 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { AwarePage } from './aware.page';
-import { FeedsComponent } from 'src/app/components/feeds/feeds.component';
-import { SearchHeaderComponent } from 'src/app/components/search-header/search-header.component';
+import { SharedModule } from 'src/app/components/shared.module';
 
 const routes: Routes = [
   {
@@ -18,11 +17,12 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
+    SharedModule,
     CommonModule,
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [AwarePage, FeedsComponent, SearchHeaderComponent]
+  declarations: [AwarePage]
 })
 export class AwarePageModule {}
