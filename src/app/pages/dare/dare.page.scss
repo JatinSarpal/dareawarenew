@@ -14,7 +14,7 @@
     font-size: 12px;
     color: #385185;
   }
-  
+
   b {
     color: #333;
   }
@@ -23,7 +23,7 @@
     border: 2px solid #c5c5c5;
     line-height: 16px;
     position: absolute;
-    bottom: 26%;
+    bottom: 23%;
     left: 44%;
     font-weight: bold;
     color: #385185;
@@ -31,20 +31,14 @@
 }
 
 .link-row {
-  border: 1px solid #f3f3f3;
   text-align: center;
-  background: #fafafa;
-  border-left: none;
-  border-right: none;
+
+  p {
+    margin: unset;
+  }
 
   a {
     color: #337ab7;
     font-size: 12px;
-  }
-
-  a.dare {
-    padding: 0 30px;
-    border-left: 1px solid gainsboro;
-    border-right: 1px solid gainsboro;
   }
 }
