@@ -1,1 +1,41 @@
+.start_bg1 {
+  background-image: url(src/assets/images/ruchi.png);
+  background-repeat: no-repeat;
+  width: 14%;
+}
+.start_bg2 {
+  background-image: url(src/assets/images/rajani.png);
+  background-repeat: no-repeat;
+  width: 14%;
+}
+.start_bg3 {
+  background-image: url(src/assets/images/rohan.png);
+  background-repeat: no-repeat;
+  width: 14%;
+}
+.start_bg4 {
+  background-image: url(src/assets/images/mohan.png);
+  background-repeat: no-repeat;
+}
+.start_bg5 {
+  background-image: url(src/assets/images/ruchi.png);
+  background-repeat: no-repeat;
+  width: 14%;
+}
 
+.image-row {
+
+  div {
+    margin: 16px 10px;
+
+    img {
+      padding: 15px;
+    }
+
+    p {
+      font-size: 12px;
+      text-align: center;
+      margin: unset;
+    }
+  }
+}

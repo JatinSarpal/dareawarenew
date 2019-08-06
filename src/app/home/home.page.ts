@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  feedImage: any = ['banner_start.png', 'banner_dare.png'];
+
   constructor() {}
 
 }
