@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DarePage implements OnInit {
 
   feedImage: any = ['banner_dare.png', 'photo1.jpg'];
+  showSetting = false;
 
   constructor() { }
 

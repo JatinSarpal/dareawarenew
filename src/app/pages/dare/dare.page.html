@@ -47,10 +47,20 @@
           <p><a href="#">Aware</a></p>
         </ion-col>
         <ion-col>
-          <a href="#">
+          <a>
             <img src="assets/images/more_circle.png">
           </a>
-          <p><a href="#">More</a></p>
+          <p><a (click)="showSetting = !showSetting">More</a>
+          </p>
+          <ion-list *ngIf="showSetting">
+            <ion-text>Block User</ion-text>
+            <ion-text>Report</ion-text>
+            <ion-text>Copy Profile URL</ion-text>
+            <ion-text>Share this Profile</ion-text>
+            <ion-text>Send Message</ion-text>
+            <ion-text>Turn on Post Notification</ion-text>
+            <ion-text>Cancel</ion-text>
+          </ion-list>
         </ion-col>
       </ion-row>
 

@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AwarePage implements OnInit {
 
   feedImage: any = ['aware_banner.png', 'photo3.jpg'];
+  showSetting = false;
 
   constructor() { }
 
