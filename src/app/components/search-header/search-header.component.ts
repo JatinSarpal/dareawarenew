@@ -7,9 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SearchHeaderComponent implements OnInit {
 
-  @Input() iconImg = '';
-  @Input() iconUser = '';
-  @Input() iconDare = '';
+  @Input() leftIcon = '';
+  @Input() rightIcon = '';
 
   constructor() { }
 
