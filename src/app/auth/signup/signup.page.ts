@@ -19,7 +19,6 @@ export class SignupPage implements OnInit {
   constructor(
     private accountService: AccountService,
     private navCtrl: NavController,
-
   ) { }
 
   ngOnInit() { }
@@ -28,7 +27,13 @@ export class SignupPage implements OnInit {
     this.accountService.signUp(this.signUpModel)
     .then((response: any) => {
       console.log(response);
+      this.navCtrl.navigateForward('/signin');
+    })
+    .catch(err => {
+      if (err.status === '400') {
+
+      }
+      console.log(err);
     });
-    this.navCtrl.navigateForward('/profile');
   }
 }
